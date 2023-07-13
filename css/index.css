@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+.imagenFondo {
+    background-image: url(../assets/fondoEstatico.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    transition: background-image();
+/*     height: 70em; */
+}
+
+
+
+
+.textoFondoContainer {
+    position: relative;
+    top: 10em;
+}
+
+.botonRegistrarse {
+    position: relative;
+    top: 10vh;
+    padding: 10px;
+    border-radius: 10px;
+    background: linear-gradient(to right, rgb(136, 49, 148), rgb(13, 13, 37));
+    font-size: 20px;
+    border: none;
+}
+
+.l1 {
+    color: rgb(247, 118, 247);
+}
+
+
+h1, p {
+    color: white;
+    line-height: 30px;
+}
+
+.encabezadoH1 {
+    font-size: 70px;
+}
+.encabezadoP {
+    margin-top: 4rem;
+}
+
+.headerContainer {
+    background-color: rgb(15, 12, 31);
+    color: white;
+    display: flex;
+    padding: 20px 0px 20px 45px;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+}
+
+
+
+ul {
+    display: flex;
+    list-style: none;
+    margin-left: 37rem;
+}
+
+li {
+    margin-left: 50px;
+    margin-top: 5px;  
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.4s ease;
+}
+
+
+.tituloHeader {
+    font-family: 'Roboto Mono', monospace;
+}
+
+
+.links:hover {
+    color: rgb(247, 118, 247);
+}
+
+div {
+    text-align: center;
+}
+
+.seccion1 {
+   
+    height: 40em;
+    background-color: rgb(15, 12, 31);
+    border-radius: 100px 100px 0 0 ;
+    margin-top: 22rem;
+}
+
+.cartasContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5em;
+    margin-right: 5em;
+}
+
+h3 {
+    text-align: center;
+    padding-top: 50px;
+    margin-bottom: 100px;
+    font-size: 35px;
+}
+ 
+.tecnologiaImagen{
+    width: 150px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.tituloCartita1 {
+    margin-top: 10px ;
+    font-size: 22px;
+}
+
+.enviosImagen {
+    width: 180px;
+    
+}
+
+.cartitas {
+    
+    border-radius: 25px;
+    width: 300px;
+    height: 410px;
+    padding: 10px 20px 10px 20px;
+    
+    background: linear-gradient(to right, rgb(136, 49, 148), rgb(13, 13, 37));
+    box-shadow: 1px 1px 5px rgb(160, 80, 252);
+}
+
+
+
+
+
+.tituloCartita2 {
+    margin-top: 10px;
+    font-size: 30px;
+}
+.parra2Cartita2 {
+    position: relative;
+    bottom: 15px;
+}
+
+.tituloCartita3{
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.clienteImagen {
+    width: 150px;
+    height: 120px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.seccion2 {
+    background-color:  rgb(15, 12, 31);
+    height: 50em;
+}
+
+h4 {
+    padding-top: 2em;
+    font-size: 50px;
+    line-height: 65px;
+}
+.seccion2 > p {
+    font-size: 40px;
+    line-height: 70px;
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
+.seccion2Div1 {
+    
+}
+
+footer {
+    background-color: black;
+    height: 5px;
+    
+}
