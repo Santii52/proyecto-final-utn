@@ -175,7 +175,7 @@ h3 {
 
 .seccion2 {
     background-color:  rgb(15, 12, 31);
-    
+    height: 65em;
     padding-bottom: 5em;
 }
 
@@ -212,11 +212,11 @@ h3 {
 
 h4 {
     padding-top: 2em;
-    font-size: 50px;
+    font-size: 40px;
     line-height: 65px;
 }
 .seccion2 > p {
-    font-size: 40px;
+    font-size: 30px;
     line-height: 70px;
     padding-top: 40px;
     padding-bottom: 50px;
