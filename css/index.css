@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     color: white;
+
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
@@ -63,8 +64,8 @@ h1, p {
     display: flex;
     padding: 20px 0px 20px 45px;
     position: fixed;
-    z-index: 999;
-    width: 100%;
+    z-index: 1;
+    width: 100vw;
 }
 
 
@@ -110,8 +111,8 @@ div {
 .cartasContainer {
     display: flex;
     justify-content: space-between;
-    margin-left: 5em;
-    margin-right: 5em;
+    margin-left: 10vw;
+    margin-right: 10vw;
     flex-wrap: wrap;
 }
 
@@ -144,8 +145,9 @@ h3 {
     width: 300px;
     height: 410px;
     padding: 10px 20px 10px 20px;
-    background: linear-gradient(to right, rgb(136, 49, 148), rgb(13, 13, 37));
-    /* box-shadow: 1px 1px 5px rgb(119, 0, 255); */
+    background: linear-gradient(to right, rgb(136, 49, 148), rgb(23, 23, 88));
+
+    box-shadow: 1px 1px 5px rgb(119, 0, 255);
 }
 
 
@@ -194,7 +196,7 @@ h3 {
 .seccion2Div1 > img {
     box-sizing: border-box;
     box-shadow: 0px 0px 0px solid;
-    border-radius: 50px;
+    /* border-radius: 50px; */
     margin: auto;
     width: 600px;
     height: 300px;
@@ -254,4 +256,95 @@ address {
     display: block;
     margin-right: 15px;
     align-content: center;
+}
+
+@media only screen and (max-width: 1000px) {
+    .headerContainer {
+        text-align: center;
+    }
+
+    .tituloHeader {
+        font-size: 24px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .links {
+        margin-bottom: 10px;
+    }
+
+    .imagenFondo {
+        background-position: center;
+    }
+
+    .encabezadoH1 {
+        font-size: 36px;
+    }
+
+    .encabezadoP {
+        font-size: 16px;
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+
+    .botonRegistrarse {
+        font-size: 18px;
+    }
+
+    .seccion1,
+    .seccion2 {
+        text-align: center;
+    }
+
+    .seccion1 {
+        padding-bottom: 100em;
+    }
+
+    h3 {
+        padding-top: 2em;
+        margin-left: 1em;
+        margin-right: 1em;
+        font-size: 2em;
+    }
+
+    .seccion2 {
+    padding-bottom: 70em;   
+    }
+    .seccion2 > p {
+        line-height: 45px;
+        margin-left: 50px;
+        margin-right: 50px;
+        padding-top: 1em;
+    }
+
+    .seccion2 h4 {
+        font-size: 25px;
+        line-height: 40px;
+        /* display: none; */
+    }
+
+    .seccion2Div1 img {
+        max-width: 100%;
+        height: auto;
+        
+    }
+
+    footer {
+        text-align: center;
+        font-size: 14px;
+        height: 25em;
+            
+    }
+
+    .cartitas {
+        margin-bottom: 50px;
+    }
+
+    .cartasContainer {
+        justify-content: center;
+    }
 }
