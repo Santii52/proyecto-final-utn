@@ -43,15 +43,20 @@ li > a:hover {
 }
 
 .formularioContacto {
-    display: flex;
-    padding-top: 25em;
-    padding-bottom: 25em;
+    display: block;
+    padding-top: 10em;
+    padding-bottom: 50em;
     align-items: center;
     justify-content: center;
     background: linear-gradient(to right, rgb(94, 34, 102), rgb(31, 31, 82)); 148), rgb(13, 13, 37));
     height: 100vh;
+    
 }
 
+.formularioContacto label {
+    display: block;
+    margin-bottom: 10px;
+}
 
 footer {
     background-color: rgb(15, 12, 31);
@@ -74,7 +79,7 @@ address {
 }
 label {
     text-align: center;
-/*     margin: 5em; */
+
 display: inline-block;
 justify-content: center;
 align-items: center;
@@ -83,9 +88,26 @@ align-items: center;
 label > p {
     margin-top: 2em;
     font-size: 20px;
+    margin-bottom: 1em;
 }
 
-.terminosContainer {
+select, option {
+    color: black;
+    width: ;
+}
+
+input {
+    width: 15em;
+}
+
+textarea {
+    min-width: 500px;
+    max-width: 500px;
+    min-height: 120px;
+    max-height: 120px;
+}
+
+/* .terminosContainer {
     display: flex;
     margin: 20px 0px 0px 9em
 }
@@ -102,9 +124,9 @@ label > p {
     font-weight: 600;
     margin-left: 2px;
 }
+ */
 
-
-
+/* 
 .botonForm {
     margin: 32px;
     padding: 10px;
@@ -115,19 +137,11 @@ label > p {
     border: none;
     position: relative;
     left: 9em;
-   /*  width: 5em; */
+    width: 5em;
     font-size: 20px;
     transition: background 1s;
 }
 
 .botonForm:hover {
     background: linear-gradient(to right, rgb(136, 49, 148), rgb(13, 13, 37));
-}
-
-
-@media screen and (max-width: 600px) {
-    body {
-        width: 50%;
-    }
-}
-
+} */

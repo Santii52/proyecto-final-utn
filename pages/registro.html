@@ -24,7 +24,7 @@
                     <a href="../index.html" class="links">Inicio</a>
                 </li>
                 <li>
-                    <a href="" class="links">Contactar</a>
+                    <a href="../pages/contactar.html" class="links">Contactar</a>
                 </li>
                 <li>
                     <a href="" class="links l3">Registrarse</a>
@@ -36,35 +36,46 @@
         </nav>
     </header>
     <main>
-        <div class="formularioContacto">
-            <form action="">
+        <div id="formularioContacto" class="formularioContacto">
+            <form action="" >
                 <label for="" class="labelContraseña">
-                    Correo Electrónico
+                    <p>
+                        Correo Electrónico
+                    </p>
                     <br>
-                    <input type="email" required>
+                    <input type="email" class="inputsTexto" placeholder="ej: user@email.com" required id="email">
                 </label>
                 <br>
                 <label for="" class="labelUsuario">
-                    Nombre de Usuario
+                    <p>
+                        Nombre de Usuario
+                    </p>
                     <br>
-                    <input type="text" required>
+                    <input type="text" class="inputsTexto" placeholder="ej: Juan2531" id="nombre" required>
                 </label>
                 <br>
                 <label for="password" class="labelPassword">
-                    Contraseña
+                    <p>
+                        Contraseña
+                    </p>
                     <br>
-                    <input type="password" required>
+                    <input type="password" class="inputsTexto" placeholder="Introduzca una contraseña única (no se la pases a nadie)" id="password" required>
                 </label>
                 <br>
-                <label for="password" class="labelPassword">
-                    Repetir Contraseña
+                <label for="password2" class="labelPassword">
+                    <p>
+                        Repetir Contraseña
+                    </p>
                     <br>
-                    <input type="password" required>
+                    <input type="password" class="inputsTexto" placeholder="Repita la contraseña única" id="password2" required>
                 </label>
                 <br>
-                Aceptar terminos y condiciones <input type="checkbox" required>
+                <div class="terminosContainer">
+                    <p>Aceptar terminos y condiciones</p> 
+                    <input type="checkbox" id='checkCondiciones'required>
+                </div>
                 <br>
-                <button class="botonForm">Registrarse</button>
+                <button class="botonForm" id="botonForm">Registrarse</button>
 
             </form>
         </div>

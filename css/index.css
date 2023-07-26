@@ -14,7 +14,7 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    transition: background-image();
+    /* transition: background-image(); */
 /*     height: 70em; */
 }
 
@@ -23,7 +23,7 @@
 
 .textoFondoContainer {
     position: relative;
-    top: 10em;
+    top: 13em;
 }
 
 .botonRegistrarse {
@@ -34,11 +34,11 @@
     background: linear-gradient(to right, rgb(136, 49, 148), rgb(13, 13, 37));
     font-size: 20px;
     border: none;
-    transition: background 0.2s;
+    /* transition: background:linear-gradient 0.6s; */
 }
 
 .botonRegistrarse:hover {
-    background: rgb(76, 58, 245);
+    background: linear-gradient(to right, rgb(120, 118, 230), rgb(13, 13, 37));
 }
 
 .l1 {
@@ -102,9 +102,10 @@ div {
 }
 
 .seccion1 {
-    height: 40em;
+    height: 45em;
     background-color: rgb(15, 12, 31);
     border-radius: 100px 100px 0 0 ;
+    padding-bottom: 5em;
     margin-top: 22rem;
 }
 
@@ -120,7 +121,7 @@ h3 {
     text-align: center;
     padding-top: 50px;
     margin-bottom: 100px;
-    font-size: 35px;
+    font-size: 45px;
 }
 
 .tecnologiaImagen{
@@ -176,9 +177,13 @@ h3 {
 }
 
 .seccion2 {
-    background-color:  rgb(15, 12, 31);
-    height: 65em;
+    background-image: url(../assets/pcneonfondo2.jpg);
+    height: 45em;
     padding-bottom: 5em;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 .seccion2Div1 {
@@ -213,22 +218,25 @@ h3 {
 }
 
 h4 {
-    padding-top: 2em;
+    padding-top: 1em;
     font-size: 40px;
     line-height: 65px;
+    text-shadow: 5px 3px 5px black;
 }
 .seccion2 > p {
     font-size: 30px;
     line-height: 70px;
     padding-top: 40px;
     padding-bottom: 50px;
+    text-shadow: 3px 2px 4px black;
 }
 
 footer {
     background: linear-gradient(to right, rgb(94, 34, 102), rgb(31, 31, 82));  
     height: 20em;
+    margin-top: 36px;
     color: white;
-
+   /*  padding-bottom: 20px */
 }
 
 footer > p, address {
@@ -239,7 +247,7 @@ footer > p, address {
 }
 
 address {
-    margin-top: 10px;
+    margin-top: 15px;
     color: rgb(172, 162, 162);
 }
 
@@ -256,6 +264,14 @@ address {
     display: block;
     margin-right: 15px;
     align-content: center;
+}
+
+.imagenesPC{
+    box-shadow: 2px 2px 30px black;
+}
+
+.linkArmar {
+    
 }
 
 @media only screen and (max-width: 1000px) {
@@ -319,6 +335,7 @@ address {
         margin-left: 50px;
         margin-right: 50px;
         padding-top: 1em;
+        padding-bottom: 2em;
     }
 
     .seccion2 h4 {
@@ -342,6 +359,15 @@ address {
 
     .cartitas {
         margin-bottom: 50px;
+        align-items: center;
+    }
+
+    .cartitas > p {
+        font-size: 13px;
+    }
+
+    .tituloCartita1  {
+        font-size: 10em;
     }
 
     .cartasContainer {
