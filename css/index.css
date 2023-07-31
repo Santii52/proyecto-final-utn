@@ -19,8 +19,6 @@
 }
 
 
-
-
 .textoFondoContainer {
     position: relative;
     top: 13em;
@@ -222,9 +220,7 @@ h3 {
     background: linear-gradient(to right, rgb(136, 49, 148), rgb(23, 23, 88));
 
 }
-.menuResponsive {
-    display: none;
-}
+
 
 h4 {
     padding-top: 1em;
@@ -283,16 +279,14 @@ address {
 @media only screen and (max-width: 800px) {
     .headerContainer {
         text-align: center;
-        width: 100%; /* Cambiamos el ancho al 100% para que ocupe todo el ancho de la pantalla */
+        width: 100%;
     }
-
-    /* Eliminamos el margen izquierdo para centrar los enlaces en pantallas pequeñas */
 
 
     .encabezadoH1 {
         font-size: 3em;
         text-shadow: 1px 1px 1px black;
-    }
+    
     }
 
     .encabezadoP {
@@ -302,36 +296,47 @@ address {
         text-shadow: 1px 1px 1px black;
     }
 
-    /* Aumentamos el tamaño del botón para una mejor experiencia táctil */
+    
     .botonRegistrarse {
         font-size: 20px;
-        padding: 15px 25px; /* Ajusta los valores según sea necesario */
+        padding: 15px 25px; 
     }
 
-    /* Modificamos el espacio entre los elementos de las cartas para una mejor distribución */
+    h2{
+        font-size: 24px;
+        padding-right: 50px;
+    }
     
+    
+
+
     h3 {
         font-size: 2em;
-        padding-top: 2em;
+        padding-top: 40px;
+
     }
 
     .cartasContainer {
         justify-content: center;
     }
-
+   
+    .seccion1 {
+        border-radius: 3em 3em 0 0;
+        margin-top: 178px;
+    }
 
     .cartitas {
         margin-bottom: 5em;
         padding-bottom: 28em;
     }
 
-    /* Eliminamos los márgenes horizontales en .seccion2Div1 para que las imágenes no se desborden */
+
     .seccion2Div1 {
         margin-left: 0;
         margin-right: 0;
     }
 
-    /* Aseguramos que las imágenes dentro de .seccion2Div1 ocupen todo el ancho disponible */
+    
     .seccion2Div1 > img {
         width: 100%;
         height: auto;
