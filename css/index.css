@@ -19,6 +19,7 @@
 }
 
 
+
 .textoFondoContainer {
     position: relative;
     top: 13em;
@@ -281,7 +282,6 @@ address {
         text-align: center;
         width: 100%;
     }
-
 
     .encabezadoH1 {
         font-size: 3em;
