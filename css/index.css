@@ -66,6 +66,7 @@ h1, p {
     position: fixed;
     z-index: 1;
     width: 100vw;
+    box-shadow: 1px 1px 5px black;
 }
 
 
@@ -102,7 +103,7 @@ div {
 }
 
 .seccion1 {
-    height: 45em;
+    /* height: 45em; */
     background-color: rgb(15, 12, 31);
     border-radius: 100px 100px 0 0 ;
     padding-bottom: 5em;
@@ -178,7 +179,7 @@ h3 {
 
 .seccion2 {
     background-image: url(../assets/pcneonfondo2.jpg);
-    height: 45em;
+    height: 59em;
     padding-bottom: 5em;
     box-sizing: border-box;
     background-repeat: no-repeat;
@@ -217,6 +218,14 @@ h3 {
     margin-top: 75px;
 }
 
+.seccion2Div1 {
+    background: linear-gradient(to right, rgb(136, 49, 148), rgb(23, 23, 88));
+
+}
+.menuResponsive {
+    display: none;
+}
+
 h4 {
     padding-top: 1em;
     font-size: 40px;
@@ -233,7 +242,7 @@ h4 {
 
 footer {
     background: linear-gradient(to right, rgb(94, 34, 102), rgb(31, 31, 82));  
-    height: 20em;
+    height: 23em;
     margin-top: 36px;
     color: white;
    /*  padding-bottom: 20px */
@@ -270,107 +279,63 @@ address {
     box-shadow: 2px 2px 30px black;
 }
 
-.linkArmar {
-    
-}
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 800px) {
     .headerContainer {
         text-align: center;
+        width: 100%; /* Cambiamos el ancho al 100% para que ocupe todo el ancho de la pantalla */
     }
 
-    .tituloHeader {
-        font-size: 24px;
-    }
+    /* Eliminamos el margen izquierdo para centrar los enlaces en pantallas pequeñas */
 
-    nav {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .links {
-        margin-bottom: 10px;
-    }
-
-    .imagenFondo {
-        background-position: center;
-    }
 
     .encabezadoH1 {
-        font-size: 36px;
+        font-size: 3em;
+        text-shadow: 1px 1px 1px black;
+    }
     }
 
     .encabezadoP {
-        font-size: 16px;
+        font-size: 22px;
         margin-left: 2em;
         margin-right: 2em;
+        text-shadow: 1px 1px 1px black;
     }
 
+    /* Aumentamos el tamaño del botón para una mejor experiencia táctil */
     .botonRegistrarse {
-        font-size: 18px;
+        font-size: 20px;
+        padding: 15px 25px; /* Ajusta los valores según sea necesario */
     }
 
-    .seccion1,
-    .seccion2 {
-        text-align: center;
-    }
-
-    .seccion1 {
-        padding-bottom: 100em;
-    }
-
+    /* Modificamos el espacio entre los elementos de las cartas para una mejor distribución */
+    
     h3 {
-        padding-top: 2em;
-        margin-left: 1em;
-        margin-right: 1em;
         font-size: 2em;
-    }
-
-    .seccion2 {
-    padding-bottom: 70em;   
-    }
-    .seccion2 > p {
-        line-height: 45px;
-        margin-left: 50px;
-        margin-right: 50px;
-        padding-top: 1em;
-        padding-bottom: 2em;
-    }
-
-    .seccion2 h4 {
-        font-size: 25px;
-        line-height: 40px;
-        /* display: none; */
-    }
-
-    .seccion2Div1 img {
-        max-width: 100%;
-        height: auto;
-        
-    }
-
-    footer {
-        text-align: center;
-        font-size: 14px;
-        height: 25em;
-            
-    }
-
-    .cartitas {
-        margin-bottom: 50px;
-        align-items: center;
-    }
-
-    .cartitas > p {
-        font-size: 13px;
-    }
-
-    .tituloCartita1  {
-        font-size: 10em;
+        padding-top: 2em;
     }
 
     .cartasContainer {
         justify-content: center;
     }
+
+
+    .cartitas {
+        margin-bottom: 5em;
+        padding-bottom: 28em;
+    }
+
+    /* Eliminamos los márgenes horizontales en .seccion2Div1 para que las imágenes no se desborden */
+    .seccion2Div1 {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    /* Aseguramos que las imágenes dentro de .seccion2Div1 ocupen todo el ancho disponible */
+    .seccion2Div1 > img {
+        width: 100%;
+        height: auto;
+    }
+
+
 }

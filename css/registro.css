@@ -14,6 +14,7 @@
     position: fixed;
     z-index: 1;
     width: 100vw;
+    box-shadow: 1px 1px 5px black;
 }
 
 
@@ -40,6 +41,10 @@ a {
 
 li > a:hover {
     color: violet;
+}
+
+h1 {
+    ;
 }
 
 .formularioContacto {
@@ -103,7 +108,10 @@ label > p {
     margin-left: 2px;
 }
 
-
+input:focus {
+    border: 2px solid #aa22b6; 
+    outline: none; 
+}
 
 .botonForm {
     margin: 32px;

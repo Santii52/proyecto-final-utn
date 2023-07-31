@@ -22,10 +22,10 @@
                     <a href="../index.html" class="links">Inicio</a>
                 </li>
                 <li>
-                    <a href="../pages/contactar.html" class="links">Contactar</a>
+                    <a href="../pages/contactar.html" class="links l2">Contactar</a>
                 </li>
                 <li>
-                    <a href="../pages/registro.html" class="links l3">Registrarse</a>
+                    <a href="../pages/registro.html" class="links">Registrarse</a>
                 </li>
                 <li>
                     <a href="" class="links">Armar</a>
@@ -34,54 +34,68 @@
         </nav>
     </header>
     <main>
-        <form action="" class="formularioContacto">
-            <label for="">
-                <p>Nombre y apellido (contactador)<p>
-                <input type="text" name="" id="">
-            </label>
-            <br>
-            <label for="">
-                <p>E-mail</p>
-                <input type="text" name="" id="">
-            </label>
-            <br>
-            <label for="">
-                <p>Soy</p>
-                <select>
-                    <option value="" disabled selected>Seleccionar </option>
-                    <option value="">Cliente</option>
-                    <option value="">Empresa</option>
-                    <option>(Otros)</option>
-                </select>
-                <p>Tipo de consulta</p>
-                <select>
-                    <option value="" disabled selected>Seleccionar</option>
-                    <option>Distribucion</option>
-                    <option>Reclamo</option>
-                    <option>(Otros)</option>
-                </select>
-                <p>
-                    (Si selecciona la opción OTROS, por favor dar la información correspondiente en el area de mensaje.)
-                </p>
-            </label>
-            <label for="">
-                
-            </label>
-            <label for="">
-                <p>
-                    Escribe tu mensaje
-                </p>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
+        <div id="formularioContacto" class="formularioContacto">
+            <h1 class="h1Titulo">Contactar</h1>
+            <form action="">
+                <label>
+                    <p>Nombre y apellido</p>
+                    <br>
+                    <input type="text" class="inputNombre" placeholder="ej: Juan Perez" required id="nombre">
+                </label>
+                <br>
+                <label>
+                    <p>Correo electrónico</p>
+                    <br>
+                    <input type="email" class="inputCorreo" placeholder="ej: usuario@email.com" id="correo" required>
+                </label>
+                <label>
+                    <p>Soy</p>
+                    <select id="soy" required>
+                        <option selected disabled>Seleccionar</option>
+                        <option>Fabricante</option>
+                        <option>Emprendimiento</option>
+                        <option>Cliente</option>
+                        <option>(Otros)</option>
+                    </select>
+                    <p>Tipo de consulta</p>
+                    <select id="tipoConsulta" required>
+                        <option selected disabled>Seleccionar</option>
+                        <option>Información general</option>
+                        <option>Reclamo</option>
+                        <option>(Otros)</option>
+                    </select>
+                </label>
+                <label>
+                    <p>Escribe un mensaje</p>
+                    <br>
+                    <textarea name="" id="mensaje" cols="30" rows="10" required></textarea>
+                    <br>
+                    <p class="parraForm1">
+                        Atención: <br>
+                        Si selecciona la opción de "Otros", por favor proporcione la información correspondiente en el
+                        mensaje.
+                    </p>
+                    <br>
+                    <p>
+                        También puede enviar la consulta o reclamo mediante correo electrónico
+                    </p>
+                    <br>
+                    <p class="correoParrafo">todoHardware@email.com</p>
+                </label>
+                <label for="">
+                    <button class="botonForm" id="botonForm">Enviar formulario</button>
+                </label>
+            </form>
 
-            </label>
-            <button>enviar</button>
-        </form>
+        </div>
     </main>
     <footer>
         <p>© 2023 Todos los derechos reservados a todoHardware</p>
+        <br>
         <p>Para consultas no dude en contactarnos </p>
         <address>todoHardware@email.com</address>
     </footer>
+    <script src="../scripts/contactar.js"></script>
 </body>
 
 </html>

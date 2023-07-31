@@ -14,10 +14,11 @@
     position: fixed;
     z-index: 1;
     width: 100vw;
+    box-shadow: 1px 1px 5px black;
 }
 
 
-.l3 {
+.l2 {
     color: rgb(247, 118, 247);
 }
 
@@ -42,20 +43,38 @@ li > a:hover {
     color: violet;
 }
 
+.h1Titulo {
+    margin-bottom: 1em;
+}
+
 .formularioContacto {
     display: block;
-    padding-top: 10em;
-    padding-bottom: 50em;
+    padding-top: 7em;
+    padding-bottom: 52em;
     align-items: center;
     justify-content: center;
     background: linear-gradient(to right, rgb(94, 34, 102), rgb(31, 31, 82)); 148), rgb(13, 13, 37));
     height: 100vh;
-    
+    text-align: center;
 }
 
 .formularioContacto label {
     display: block;
     margin-bottom: 10px;
+}
+input:focus {
+    border: 2px solid #aa22b6; 
+    outline: none; 
+}
+
+textarea:focus {
+    border: 2px solid #aa22b6; 
+    outline: none;
+}
+
+select:focus {
+    border: 1px solid #aa22b6; 
+    outline: none;
 }
 
 footer {
@@ -68,10 +87,10 @@ footer {
 
 }
 
-form {
+/* form {
     justify-content: center;
     align-items: center;
-}
+} */
 
 address {
     color: rgb(172, 162, 162);
@@ -80,24 +99,29 @@ address {
 label {
     text-align: center;
 
-display: inline-block;
-justify-content: center;
-align-items: center;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
     
 }
 label > p {
-    margin-top: 2em;
+    margin-top: 5px;
     font-size: 20px;
-    margin-bottom: 1em;
+   /*  margin-bottom: 50em; */
 }
 
 select, option {
     color: black;
-    width: ;
+    margin-bottom: 2em;
 }
 
 input {
-    width: 15em;
+    width: 30em;
+    color: black;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    height: 2em;
+    font-size: 1em;
 }
 
 textarea {
@@ -105,29 +129,12 @@ textarea {
     max-width: 500px;
     min-height: 120px;
     max-height: 120px;
-}
-
-/* .terminosContainer {
-    display: flex;
-    margin: 20px 0px 0px 9em
-}
-.terminosContainer > input {
-    margin-left: 10px;
-    margin-top: 2px;
-}
-
-.inputsTexto {
-    width: 35em;
-    height: 25px;
     color: black;
-    font-size: 1em;
-    font-weight: 600;
-    margin-left: 2px;
+    margin-bottom: 4em;
+    font-size: 18px;
+    margin-top: 1em;
 }
- */
-
-/* 
-.botonForm {
+button {
     margin: 32px;
     padding: 10px;
     color: violet;
@@ -135,13 +142,26 @@ textarea {
     color: white;
     border-radius: 2px;
     border: none;
-    position: relative;
-    left: 9em;
-    width: 5em;
+/*  position: relative; */
+    /* left: 9em; */
+   /*  width: 5em; */
     font-size: 20px;
     transition: background 1s;
 }
 
-.botonForm:hover {
+button:hover {
     background: linear-gradient(to right, rgb(136, 49, 148), rgb(13, 13, 37));
-} */
+}
+
+
+p {
+    display: inline;
+}
+
+.parraForm1 {
+    font-weight: 800;
+}
+
+.correoParrafo {
+    color: rgb(151, 147, 147);
+}
