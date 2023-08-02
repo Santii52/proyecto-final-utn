@@ -139,7 +139,7 @@ input:focus {
 
     .inputsTexto {
         width: 90%; /* Ancho del input al 80% del contenedor */
-        margin-left: 2em; /* Margen izquierdo reducido */
+        margin-left: 1.25em; /* Margen izquierdo reducido */
         margin-right: 2em; /* Margen derecho reducido */
     }
 
