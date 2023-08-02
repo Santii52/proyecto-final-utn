@@ -68,7 +68,9 @@ h1, p {
     box-shadow: 1px 1px 5px black;
 }
 
-
+.botonNav {
+    display: none;
+}
 
 ul {
     display: flex;
@@ -143,7 +145,7 @@ h3 {
 .cartitas {
     
     border-radius: 25px;
-    width: 300px;
+    width: 330px;
     height: 410px;
     padding: 10px 20px 10px 20px;
     background: linear-gradient(to right, rgb(136, 49, 148), rgb(23, 23, 88));
@@ -241,13 +243,14 @@ footer {
     background: linear-gradient(to right, rgb(94, 34, 102), rgb(31, 31, 82));  
     height: 23em;
     margin-top: 36px;
+    padding-top: 20px;
     color: white;
    /*  padding-bottom: 20px */
 }
 
 footer > p, address {
     position: relative;
-    z-index: 1;
+    z-index: 0;
     top: 200px;
     text-align: center;
 }
@@ -272,15 +275,56 @@ address {
     align-content: center;
 }
 
-.imagenesPC{
-    box-shadow: 2px 2px 30px black;
+
+.imagenSeccion2 {
+    border-image: linear-gradient(to bottom, #ff0000, #00ff00);
 }
 
+.toggle {
+    color: white;
+    position: absolute;
+    right: 2em;
 
-@media only screen and (max-width: 800px) {
+    cursor: pointer;
+    transition: 0.3s;
+    display: none;
+}
+
+svg {
+    width: 2em;
+    height: 2em;
+}
+
+.linksMobile {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
     .headerContainer {
         text-align: center;
         width: 100%;
+    }
+
+    /* Agregamos la clase "visible" para mostrar el menú cuando el botón es clicado */
+    
+    .toggle {
+        display: inline-block;
+    }
+
+    .linksContainer {
+        display: inline-block;
+        position: relative;
+        /* top
+        bottom: 5em; */
+        right: 10em;
+        padding-top: 3em;
+       /*  gap: 20px; */
+        justify-content: end;
+    }
+
+    .links {
+        position: relative;
+        right: 125vw;
     }
 
     .encabezadoH1 {
@@ -342,5 +386,11 @@ address {
         height: auto;
     }
 
+    .imagenSeccion2 {
+        width: 90%;
+    }
 
+    footer {
+        padding-top: 1em;
+    }
 }

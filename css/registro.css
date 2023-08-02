@@ -133,9 +133,26 @@ input:focus {
 }
 
 
-@media screen and (max-width: 600px) {
-    body {
-        width: 50%;
-    }
-}
+@media (max-width: 768px) {
 
+    .inputsTexto {
+        width: 80%; /* Ancho del input al 80% del contenedor */
+        margin-left: 2em; /* Margen izquierdo reducido */
+        margin-right: 2em; /* Margen derecho reducido */
+    }
+
+    .pInput {
+        margin-left: 0; /* Eliminar el margen izquierdo para el párrafo */
+    }
+
+    .terminosContainer {
+        margin: 20px 0; /* Margen superior e inferior */
+        justify-content: center; /* Centrar los elementos */
+    }
+
+    button {
+        margin: 20px auto; /* Margen superior e inferior y centrado horizontal */
+    }
+
+
+}
