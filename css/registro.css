@@ -153,14 +153,18 @@ input:focus {
     }
 
     .botonForm {
-        position: absolute;
-        left: 115px;
-
+        position: relative;
+        left: 2em;
+        right: 2em;
         margin-top: 10px;
         margin-bottom: 0;
     }
     
     footer {
         padding-top: 3em;
+    }
+    
+    .checkCondiciones {
+        margin-top: 30em;
     }
 }

@@ -153,10 +153,6 @@ h3 {
     box-shadow: 1px 1px 5px rgb(119, 0, 255);
 }
 
-
-
-
-
 .tituloCartita2 {
     margin-top: 10px;
     font-size: 30px;
@@ -186,43 +182,9 @@ h3 {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-}
-
-.seccion2Div1 {
-    /*  display: flex;
-    justify-content: space-between;
-    margin-left: 5rem;
-    margin-right: 5rem; */
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-left: 50px;
-    margin-right: 50px;
 }
 
-.seccion2Div1 > img {
-    box-sizing: border-box;
-    box-shadow: 0px 0px 0px solid;
-    /* border-radius: 50px; */
-    margin: auto;
-    width: 600px;
-    height: 300px;
-    border: 3px solid;
-    border-width: 2px;
-    border-image: linear-gradient(105.51deg, rgba(231, 46, 255, 0.77) 0%, rgba(34, 40, 70, 0.24) 98.98%);
-    border-image-slice: 1;
-    width: 400px;
-}
-
-.seccion2Div1 > p {
-    font-size: 2em;
-    margin-top: 75px;
-}
-
-.seccion2Div1 {
-    background: linear-gradient(to right, rgb(136, 49, 148), rgb(23, 23, 88));
-
-}
 
 
 h4 {
@@ -231,16 +193,37 @@ h4 {
     line-height: 65px;
     text-shadow: 5px 3px 5px black;
 }
-.seccion2 > p {
-    font-size: 30px;
-    line-height: 70px;
-    padding-top: 40px;
-    padding-bottom: 50px;
-    text-shadow: 3px 2px 4px black;
+
+
+.div1Seccion2 {
+    background: linear-gradient(to right, rgb(19, 23, 43), rgb(9, 110, 77));
+    width: 80vw;
+    height: 34rem;
+    margin-top: 12em;
+    margin-left: 10vw;
+    border-radius: 10em 0 10em 0;
+    overflow: hidden;
+    border: 30px, 30px, red;
+}
+
+
+.div1Seccion2 > p {
+    font-size: 32px;
+    line-height: 2em;
+    margin-top: 4em;
+    margin-bottom: 3em;
+    margin-left: 30px;
+    margin-right: 30px;
+    color: rgb(245, 174, 245);
+}
+
+.nvidiaLogo {
+    width: 30em;
+    margin-bottom: 30em;
 }
 
 footer {
-    background: linear-gradient(to right, rgb(94, 34, 102), rgb(31, 31, 82));  
+    background: linear-gradient(to right, rgb(73, 30, 78), rgb(31, 31, 82));  
     height: 23em;
     margin-top: 36px;
     padding-top: 20px;
@@ -260,24 +243,13 @@ address {
     color: rgb(172, 162, 162);
 }
 
-.logosContainer {
-    display: flex;
-}
 
-.logo {
-    width: 30px;
-    position: relative;
-    top: 13em;
-    left: 45vw;
-    right: 45vw;
-    display: block;
-    margin-right: 15px;
-    align-content: center;
-}
+
+
 
 
 .imagenSeccion2 {
-    border-image: linear-gradient(to bottom, #ff0000, #00ff00);
+    width: 2px;
 }
 
 .toggle {
@@ -375,16 +347,6 @@ svg {
     }
 
 
-    .seccion2Div1 {
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    
-    .seccion2Div1 > img {
-        width: 100%;
-        height: auto;
-    }
 
     .imagenSeccion2 {
         width: 90%;
