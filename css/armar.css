@@ -1,0 +1,120 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+.headerContainer {
+    background-color: rgb(15, 12, 31);
+    color: white;
+    display: flex;
+    padding: 20px 0px 20px 45px;
+    position: fixed;
+    z-index: 1;
+    width: 100vw;
+    box-shadow: 1px 1px 5px black;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.component-list {
+    float: left;
+    width: 48%;
+    box-sizing: border-box;
+    padding: 0 1%;
+    margin-bottom: 20px;
+}
+
+.cart {
+    float: right;
+    width: 48%;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.component-title {
+    margin-top: 0;
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+}
+
+li:hover {
+    background-color: #e0e0e0;
+}
+
+.cart h2 {
+    text-align: center;
+    margin-top: 0;
+    color: #555;
+}
+
+.cart ul {
+    margin-top: 0;
+}
+
+.cart li {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+.cart li strong {
+    font-weight: normal;
+}
+
+.cart button {
+    background-color: #ff4444;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cart button:hover {
+    background-color: #ff3333;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}

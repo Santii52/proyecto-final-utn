@@ -165,3 +165,54 @@ p {
 .correoParrafo {
     color: rgb(151, 147, 147);
 }
+
+
+@media (max-width: 768px) {
+   /*  .headerContainer {
+        padding: 10px 0px 10px 20px;
+    }
+ */
+    
+    nav {
+        display: none;
+    }
+    
+    ul {
+        margin-left: 10px;
+    }
+
+    li {
+        margin-left: 20px;
+    }
+
+    
+
+    .formularioContacto {
+        padding-top: 8em;
+        padding-bottom: 60em;
+    }
+
+    input {
+        width: 50%;
+    }
+
+    select {
+        width: 5em;
+    }
+
+    textarea {
+        min-width: 60%;
+        max-width: 70%;
+    }
+
+    footer {
+        margin: 0;
+    }
+
+    .parraForm1, .parraForm2 {
+        font-size: 16px;
+        padding-bottom: 10px;
+    }
+
+    
+}

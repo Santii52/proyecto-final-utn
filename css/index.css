@@ -280,8 +280,41 @@ svg {
     /* Agregamos la clase "visible" para mostrar el menú cuando el botón es clicado */
     
     .toggle {
-        display: inline-block;
+        display: block;
     }
+    
+    .navbar {
+        display: none;
+        background-color: rgb(15, 12, 31);
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        top: 60px;
+        left: 0;
+        z-index: 1;
+    }
+
+    .navbar.active {
+        display: block;
+        transition: all 1s;
+    }
+
+    .navbar ul {
+        display: block;
+        padding: 1em 0;
+    }
+
+    .navbar li {
+        margin-left: 2em;
+    }
+
+    .navbar a {
+        display: block;
+        padding: 10px;
+        font-size: 18px;
+        color: white;
+    }
+
 
     .linksContainer {
         display: inline-block;

@@ -1,6 +1,6 @@
-const toggle = document.querySelector('.toggle');
-const links = document.querySelector('.links');
+const toggleNav = document.getElementById('toggleNav');
+    const navbar = document.querySelector('.navbar');
 
-toggle.addEventListener('click', () => {
-    links.classList.toggle('active')
-})
+    toggleNav.addEventListener('click', () => {
+        navbar.classList.toggle('active');
+    });
