@@ -1,38 +1,48 @@
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
-    padding: 20px;
-    background-color: #f4f4f4;
+    padding: 0px;
+    background: linear-gradient(to right, rgb(94, 34, 102), rgb(31, 31, 82));
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
-.headerContainer {
-    background-color: rgb(15, 12, 31);
+
+header {
+    background-color: black;
+    padding: 0.5px 0px 2px 45px;
+    margin-bottom: 2em;
     color: white;
-    display: flex;
-    padding: 20px 0px 20px 45px;
-    position: fixed;
-    z-index: 1;
-    width: 100vw;
     box-shadow: 1px 1px 5px black;
 }
+
+h2 > a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
 
 .container {
     max-width: 1100px;
     margin: 0 auto;
     padding: 20px;
-    background-color: white;
+    background: linear-gradient(to right, rgb(88, 120, 223), rgb(148, 42, 107));
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+    margin-bottom: 2em;
 }
 
 h1 {
     text-align: center;
-    margin-bottom: 30px;
-    color: #333;
+    margin-top: 1em;
+    margin-bottom: 3em;
+
+    color: white;
 }
+
 
 .component-list {
     float: left;
@@ -43,8 +53,10 @@ h1 {
 }
 
 .cart {
-    float: right;
-    width: 48%;
+   float: right;
+    top: 10em;
+    width: 95%;
+    height: 10%;
     box-sizing: border-box;
     padding: 20px;
     background-color: #f9f9f9;
@@ -54,20 +66,20 @@ h1 {
 
 .component-title {
     margin-top: 0;
-    color: #333;
+    color: #ffffff;
     font-size: 18px;
     font-weight: bold;
 }
 
-ul {
+.linksContainer {
     list-style: none;
     padding: 0;
     margin: 0;
 }
-
-li {
+    
+.linksContainer > li {
     padding: 20px;
-    background-color: #f5f5f5;
+    background: white;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     cursor: pointer;
@@ -99,8 +111,8 @@ li:hover {
     font-weight: normal;
 }
 
-.cart button {
-    background-color: #ff4444;
+button {
+    background-color: #5841bd;
     color: white;
     border: none;
     border-radius: 5px;
@@ -109,8 +121,8 @@ li:hover {
     transition: background-color 0.3s;
 }
 
-.cart button:hover {
-    background-color: #ff3333;
+button:hover {
+    background-color: #9233ff;
 }
 
 .clearfix::after {

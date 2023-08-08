@@ -1,9 +1,9 @@
 const videoCardsData = [
     {
         brand: "Nvidia",
-        model: "GTX 1080",
-        memory: 8,
-        price: 500
+        model: "RTX 4090",
+        memory: 24,
+        price: 1500
     },
     {
         brand: "AMD",
@@ -18,14 +18,12 @@ const processorsData = [
         brand: "Intel",
         model: "Core i7-9700K",
         cores: 8,
-        threads: 8,
         price: 350
     },
     {
         brand: "AMD",
         model: "Ryzen 5 5600X",
         cores: 6,
-        threads: 12,
         price: 300
     }
 ];
@@ -42,8 +40,7 @@ function showData(data, elementId, type) {
             <strong>Marca:</strong> ${item.brand}<br>
             <strong>Modelo:</strong> ${item.model}<br>
             ${item.memory ? `<strong>Memoria:</strong> ${item.memory} GB<br>` : ''}
-            ${item.cores ? `<strong>Núcleos:</strong> ${item.cores}<br>` : ''}
-            ${item.threads ? `<strong>Hilos:</strong> ${item.threads}<br>` : ''}
+            ${item.cores ? `<strong>Núcleos:</strong> ${item.cores}<br>`: ''}
             <strong>Precio:</strong> $${item.price}<br>
             <button onclick="addToCart(${index}, '${type}')">Añadir al Carrito</button>
         `;

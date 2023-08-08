@@ -167,11 +167,7 @@ p {
 }
 
 
-@media (max-width: 768px) {
-   /*  .headerContainer {
-        padding: 10px 0px 10px 20px;
-    }
- */
+@media only screen and (max-width: 768px) {
     
     nav {
         display: none;

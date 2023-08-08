@@ -1,68 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Armar PC</title>
+    <title>Comprar productos</title>
     <link rel="stylesheet" href="../css/armar.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <h2>
-        <a href="" class="tituloHeader">
-            todoHardware
-        </a>
-    </h2>
-    <nav class="navbar" id="nav-inks">
-        <div class="toggle">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                class="bi bi-list" viewBox="0 0 16 16">
-                <path fill-rule="evenodd"
-                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
-            </svg>
-        </div>
-        <ul class="linksContainer">
-            <li>
-                <a href="../index.html" class="links l1">Inicio</a>
-            </li>
-            <li>
-                <a href="../pages/contactar.html" class="links">Contactar</a>
-            </li>
-            <li>
-                <a href="../pages/registro.html" class="links">Registrarse</a>
-            </li>
-            <li>
-                <a href="../pages/armar.html" class="links">Armar</a>
-            </li>
+    <header>
+        <h2>
+            <a href="" class="tituloHeader">
+                todoHardware
+            </a>
+        </h2>
+        <nav>
 
-        </ul>
-
-    </nav>
+        </nav>
+    </header>
     
     <div class="container">
-        <h1>Armar tu PC</h1>
-        
+        <h1>Llevate los mejores productos para armar tu PC!</h1>
         <div class="component-list">
             <h2 class="component-title">Placas de Video:</h2>
-            <ul id="videoCards"></ul>
+            <ul class="linksContainer" id="videoCards"></ul>
         </div>
-    
         <div class="component-list">
             <h2 class="component-title">Procesadores:</h2>
-            <ul id="processors"></ul>
+            <ul class="linksContainer" id="processors"></ul>
         </div>
-    
         <div class="cart">
             <h2>Carrito de Compras</h2>
-            <ul id="cartItems"></ul>
+            <ul class="linksContainer" id="cartItems"></ul>
             <button class="buy-button" onclick="buyItems()">Comprar</button>
         </div>
-        
         <div class="clearfix"></div>
     </div>
-
     <script src="../scripts/armar.js"></script>
+    <footer>
+        <p>© 2023 Todos los derechos reservados a todoHardware</p>
+        <br>
+        <p>Para consultas no dude en contactarnos </p>
+        <address>todoHardware@email.com</address>
+    </footer>
 </body>
+
 </html>

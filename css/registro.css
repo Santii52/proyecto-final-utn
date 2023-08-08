@@ -53,7 +53,7 @@ h1 {
     padding-bottom: 25em;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to right, rgb(94, 34, 102), rgb(31, 31, 82)); 148), rgb(13, 13, 37));
+    background: linear-gradient(to right, rgb(94, 34, 102), rgb(31, 31, 82));
     height: 100vh;
 }
 
@@ -134,8 +134,6 @@ input:focus {
 
 
 @media (max-width: 768px) {
-
-    
 
     .inputsTexto {
         width: 90%; /* Ancho del input al 80% del contenedor */
