@@ -1,34 +1,34 @@
-const videoCardsData = [
+const dataTarjetasDeVideo = [
     {
-        brand: "Nvidia",
-        model: "RTX 4090",
-        memory: 24,
-        price: 1500
+        marca: "Nvidia",
+        modelo: "RTX 4090",
+        memoria: 24,
+        precio: 1500
     },
     {
-        brand: "AMD",
-        model: "RX 5700 XT",
-        memory: 8,
-        price: 450
+        marca: "AMD",
+        modelo: "RX 5700 XT",
+        memoria: 8,
+        precio: 450
     }
 ];
 
-const processorsData = [
+const dataProcesadores = [
     {
-        brand: "Intel",
-        model: "Core i7-9700K",
-        cores: 8,
-        price: 350
+        marca: "Intel",
+        modelo: "Core i7-9700K",
+        nucleos: 8,
+        precio: 350
     },
     {
-        brand: "AMD",
-        model: "Ryzen 5 5600X",
-        cores: 6,
-        price: 300
+        marca: "AMD",
+        modelo: "Ryzen 5 5600X",
+        nucleos: 6,
+        precio: 300
     }
 ];
 
-const cartItems = [];
+const itemsCarrito = [];
 
 function showData(data, elementId, type) {
     const dataList = document.getElementById(elementId);
@@ -37,11 +37,11 @@ function showData(data, elementId, type) {
     data.forEach((item, index) => {
         const itemElement = document.createElement("li");
         itemElement.innerHTML = `
-            <strong>Marca:</strong> ${item.brand}<br>
-            <strong>Modelo:</strong> ${item.model}<br>
-            ${item.memory ? `<strong>Memoria:</strong> ${item.memory} GB<br>` : ''}
-            ${item.cores ? `<strong>Núcleos:</strong> ${item.cores}<br>`: ''}
-            <strong>Precio:</strong> $${item.price}<br>
+            <strong>Marca:</strong> ${item.marca}<br>
+            <strong>Modelo:</strong> ${item.modelo}<br>
+            ${item.memory ? `<strong>Memoria:</strong> ${item.memoria} GB<br>` : ''}
+            ${item.cores ? `<strong>Núcleos:</strong> ${item.nucleos}<br>`: ''}
+            <strong>Precio:</strong> $${item.precio}<br>
             <button onclick="addToCart(${index}, '${type}')">Añadir al Carrito</button>
         `;
         dataList.appendChild(itemElement);
@@ -50,58 +50,58 @@ function showData(data, elementId, type) {
 
 function addToCart(index, type) {
     let item, data;
-    if (type === "videoCards") {
-        item = videoCardsData[index];
-        data = videoCardsData;
+    if (type === "tarjetasDeVideo") {
+        item = dataTarjetasDeVideo[index];
+        data = dataTarjetasDeVideo;
     } else {
-        item = processorsData[index];
-        data = processorsData;
+        item = dataProcesadores[index];
+        data = dataProcesadores;
     }
 
-    cartItems.push({ item, type });
-    updateCart();
+    itemsCarrito.push({ item, type });
+    actualizarCarrito();
     showData(data, type, type);
 }
 
-function updateCart() {
-    const cartList = document.getElementById("cartItems");
+function actualizarCarrito() {
+    const cartList = document.getElementById("itemsCarrito");
     cartList.innerHTML = "";
 
-    cartItems.forEach(cartItem => {
-        const cartItemElement = document.createElement("li");
-        const item = cartItem.item;
-        cartItemElement.innerHTML = `
-            <strong>Marca:</strong> ${item.brand}<br>
-            <strong>Modelo:</strong> ${item.model}<br>
-            <strong>Precio:</strong> $${item.price}<br>
-            <button onclick="removeFromCart('${item.brand}', '${item.model}')">Eliminar</button>
+    itemsCarrito.forEach(carritoItem => {
+        const carritoItemElement = document.createElement("li");
+        const item = carritoItem.item;
+        carritoItemElement.innerHTML = `
+            <strong>Marca:</strong> ${item.marca}<br>
+            <strong>Modelo:</strong> ${item.modelo}<br>
+            <strong>Precio:</strong> $${item.precio}<br>
+            <button onclick="eliminarDelCarrito('${item.marca}', '${item.modelo}')">Eliminar</button>
         `;
-        cartList.appendChild(cartItemElement);
+        cartList.appendChild(carritoItemElement);
     });
 }
 
-function removeFromCart(brand, model) {
-    const index = cartItems.findIndex(cartItem => cartItem.item.brand === brand && cartItem.item.model === model);
+function eliminarDelCarrito(marca, modelo) {
+    const index = itemsCarrito.findIndex(carritoItem => carritoItem.item.marca === marca && carritoItem.item.modelo === modelo);
     if (index !== -1) {
-        cartItems.splice(index, 1);
-        updateCart();
+        itemsCarrito.splice(index, 1);
+        actualizarCarrito();
     }
 }
 
 function buyItems() {
-    if (cartItems.length === 0) {
-        alert("El carrito está vacío. Agrega componentes antes de comprar.");
+    if (itemsCarrito.length === 0) {
+        alert('El carrito está vacío. Agregá los componentes que deseas dándole a "Añadir al carrito" antes de comprar.');
     } else {
-        let totalPrice = 0;
-        cartItems.forEach(cartItem => {
-            totalPrice += cartItem.item.price;
+        let precioTotal = 0;
+        itemsCarrito.forEach(carritoItem => {
+            precioTotal += carritoItem.item.precio;
         });
 
-        alert(`¡Compra realizada con éxito!\nTotal: $${totalPrice.toFixed(2)}\nGracias por tu compra.`);
-        cartItems.length = 0; // Vaciar el carrito
-        updateCart();
+        alert(`¡Compra realizada con éxito!\nTotal: $${precioTotal.toFixed(2)}\nGracias por elegir todoHardware!`);
+        itemsCarrito.length = 0; 
+        actualizarCarrito();
     }
 }
 
-showData(videoCardsData, "videoCards", "videoCards");
-showData(processorsData, "processors", "processors");
+showData(dataTarjetasDeVideo, "tarjetasDeVideo", "tarjetasDeVideo");
+showData(dataProcesadores, "procesadores", "procesadores");
