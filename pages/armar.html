@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comprar productos</title>
+    <title>todoHardware / Comprar</title>
     <link rel="stylesheet" href="../css/armar.css">
+    <link rel="icon" href="../assets/todoHardwareIcono.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
@@ -19,10 +20,13 @@
             </a>
         </h2>
         <nav>
-
+            <a class="links inicio" href="../index.html">Inicio</a>
+            <a class="links" href="../pages/contactar.html">Contactar</a>
+            <a class="links" href="../pages/registro.html">Registrarse</a>
+            <a class="links l4" href="../pages/armar.html">Comprar</a>
         </nav>
     </header>
-    
+
     <div class="container">
         <h1>Llevate los mejores productos para armar tu PC!</h1>
         <div class="component-list">
@@ -38,7 +42,7 @@
             <ul class="linksContainer" id="itemsCarrito"></ul>
             <button class="buy-button" onclick="buyItems()">Comprar</button>
         </div>
-        <div class="clearfix"></div>
+        <div class="borrar"></div>
     </div>
     <script src="../scripts/armar.js"></script>
     <footer>
