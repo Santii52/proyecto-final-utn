@@ -4,8 +4,8 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     color: white;
-}
 
+}
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
@@ -277,12 +277,17 @@ svg {
         width: 100%;
     }
 
+    /* Agregamos la clase "visible" para mostrar el menú cuando el botón es clicado */
+   /*  * {
+        overflow-y: scroll;
+    } */
 
     main {
-        overflow-x: hidden
-    }
-    /* Agregamos la clase "visible" para mostrar el menú cuando el botón es clicado */
+        overflow-x: hidden;
+
     
+    }
+
     .toggle {
         display: block;
     }
@@ -309,7 +314,7 @@ svg {
     }
 
     .navbar li {
-        margin-left: 3em;
+        margin-left: 45vw;
     }
 
     .navbar a {
@@ -371,25 +376,57 @@ svg {
 
     .cartasContainer {
         justify-content: center;
+        overflow-y: hidden;
     }
    
     .seccion1 {
         border-radius: 3em 3em 0 0;
         margin-top: 178px;
+        overflow-y: hidden;
+    }
+
+    .seccion2{
+        overflow-y: hidden;
+        overflow-x: hidden;
     }
 
     .cartitas {
         margin-bottom: 5em;
         padding-bottom: 28em;
+        overflow-y: hidden;
     }
 
-
+    .div1Seccion2 > p {
+        overflow-y: hidden;
+        font-size: 32px;
+        
+    }
 
     .imagenSeccion2 {
         width: 90%;
+        overflow-y: hidden;
+    }
+
+    img {
+        overflow: hidden;
+    }
+
+    .nvidiaLogo {
+        display: none;
     }
 
     footer {
-        padding-top: 1em;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        font-size: 23px;
+        margin: 0;
+
+        padding-top: 0;
+        padding-bottom: 25em;
     }
+
+    footer > p {
+        line-height: 3em;
+    }
+
 }
