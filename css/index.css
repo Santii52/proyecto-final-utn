@@ -4,8 +4,8 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     color: white;
-
 }
+
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
@@ -277,6 +277,10 @@ svg {
         width: 100%;
     }
 
+
+    main {
+        overflow-x: hidden
+    }
     /* Agregamos la clase "visible" para mostrar el menú cuando el botón es clicado */
     
     .toggle {
