@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', function () {
     const botonEnviar = document.getElementById('botonForm');
     botonEnviar.addEventListener('click', function (event) {

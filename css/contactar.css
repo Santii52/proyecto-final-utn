@@ -40,7 +40,7 @@ a {
 }
 
 li > a:hover {
-    color: violet;
+    color: rgb(238, 130, 238);
 }
 
 .h1Titulo {
@@ -53,7 +53,7 @@ li > a:hover {
     padding-bottom: 52em;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to right, rgb(94, 34, 102), rgb(31, 31, 82)); 148), rgb(13, 13, 37));
+    background: linear-gradient(to right, rgb(94, 34, 102), rgb(31, 31, 82));
     height: 100vh;
     text-align: center;
 }
@@ -131,7 +131,7 @@ textarea {
 button {
     margin: 32px;
     padding: 10px;
-    color: violet;
+    color: rgb(238, 130, 238);
     background: linear-gradient(to right, rgb(174, 76, 187), rgb(13, 13, 37));
     color: white;
     border-radius: 2px;

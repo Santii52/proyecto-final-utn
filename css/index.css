@@ -277,15 +277,8 @@ svg {
         width: 100%;
     }
 
-    /* Agregamos la clase "visible" para mostrar el menú cuando el botón es clicado */
-   /*  * {
-        overflow-y: scroll;
-    } */
-
     main {
         overflow-x: hidden;
-
-    
     }
 
     .toggle {
@@ -398,7 +391,7 @@ svg {
 
     .div1Seccion2 > p {
         overflow-y: hidden;
-        font-size: 32px;
+        font-size: 28px;
         
     }
 
@@ -430,3 +423,4 @@ svg {
     }
 
 }
+

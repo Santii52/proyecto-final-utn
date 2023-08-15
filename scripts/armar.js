@@ -88,7 +88,7 @@ function eliminarDelCarrito(marca, modelo) {
     }
 }
 
-function buyItems() {
+function comprarItems() {
     if (itemsCarrito.length === 0) {
         alert('El carrito está vacío. Agregá los componentes que deseas dándole a "Añadir al carrito" antes de comprar.');
     } else {

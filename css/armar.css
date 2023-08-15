@@ -18,13 +18,13 @@ header {
     background-color: rgb(15, 12, 31);
     padding: 0.5px 0px 2px 45px;
     margin-bottom: 2em;
-    color: white;
+    color: #ffffff;
     box-shadow: 1px 1px 5px rgb(0, 0, 0);
     display: inline-flex;
 }
 
 h2 > a {
-    color: white;
+    color: #ffffff;
     text-decoration: none;
 }
 
@@ -34,7 +34,7 @@ h2 > a {
 
 a {
     text-decoration: none;
-    color: white;
+    color: #ffffff;
     display: inline;
 }
 
@@ -48,17 +48,15 @@ nav {
 }
 
 .links:hover {
-    color: violet;
+    color: rgb(238, 130, 238);
     transition: color 0.5s;
 }
 
-.l4 {
 
-}
 
 
 .container {
-    max-width: 1100px;
+    max-width: 1300px;
     margin: 0 auto;
     padding: 20px;
     background: linear-gradient(to right, rgb(88, 120, 223), rgb(148, 42, 107));
@@ -73,13 +71,13 @@ h1 {
     margin-top: 1em;
     margin-bottom: 3em;
 
-    color: white;
+    color: #ffffff;
 }
 
 
 .component-list {
     float: left;
-    width: 48%;
+    width: 50%;
     box-sizing: border-box;
     padding: 0 1%;
     margin-bottom: 20px;
@@ -88,7 +86,7 @@ h1 {
 .cart {
    float: right;
     top: 10em;
-    width: 95%;
+    width: 100%;
     height: 10%;
     box-sizing: border-box;
     padding: 20px;
@@ -123,13 +121,13 @@ h1 {
 
 
 li:hover {
-    background-color: #e0e0e0;
+    background-color: rgb(224, 224, 224);
 }
 
 .cart h2 {
     text-align: center;
     margin-top: 0;
-    color: #555;
+    color: rgb(85, 85, 85);
 }
 
 .cart ul {
@@ -144,6 +142,10 @@ li:hover {
 
 .cart li strong {
     font-weight: normal;
+}
+
+.l4 {
+    color: rgb(247, 118, 247);
 }
 
 button {
@@ -181,19 +183,13 @@ footer {
 
 
 @media only screen and (max-width: 768px) {
-    header {
-        padding: 10px;
-    }
+    
 
-    nav {
+    
+    .links {
         display: none;
     }
     
-    .links {
-        margin: 10px;
-        display: block;
-    }
-
     .container {
         padding: 10px;
     }

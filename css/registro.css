@@ -17,7 +17,6 @@
     box-shadow: 1px 1px 5px black;
 }
 
-
 .l3 {
     color: rgb(247, 118, 247);
 }
@@ -40,7 +39,7 @@ a {
 }
 
 li > a:hover {
-    color: violet;
+    color: rgb(238, 130, 238);
 }
 
 h1 {
@@ -116,7 +115,7 @@ input:focus {
 .botonForm {
     margin: 32px;
     padding: 10px;
-    color: violet;
+    color: rgb(238, 130, 238);
     background: linear-gradient(to right, rgb(174, 76, 187), rgb(13, 13, 37));
     color: white;
     border-radius: 2px;
@@ -136,18 +135,18 @@ input:focus {
 @media (max-width: 768px) {
 
     .inputsTexto {
-        width: 90%; /* Ancho del input al 80% del contenedor */
-        margin-left: 1.25em; /* Margen izquierdo reducido */
-        margin-right: 2em; /* Margen derecho reducido */
+        width: 90%; 
+        margin-left: 1.25em; 
+        margin-right: 2em; 
     }
 
     .pInput {
-        margin-left: 0; /* Eliminar el margen izquierdo para el párrafo */
+        margin-left: 0; 
     }
 
     .terminosContainer {
-        margin: 20px 0; /* Margen superior e inferior */
-        justify-content: center; /* Centrar los elementos */
+        margin: 20px 0; 
+        justify-content: center; 
     }
 
     .botonForm {
