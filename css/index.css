@@ -391,8 +391,8 @@ svg {
 
     .div1Seccion2 > p {
         overflow-y: hidden;
-        font-size: 28px;
-        
+        font-size: 6vw;
+        margin-top: 18vh;
     }
 
     .imagenSeccion2 {
